@@ -38,11 +38,12 @@ export default {
 <style lang="scss">
     .app-nav {
         &__list {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin: 0 -15px;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          padding: 15px 145px;
+          list-style: none;
+          margin: 0 -15px;
 
             &-item {
                 padding: 0 15px;
