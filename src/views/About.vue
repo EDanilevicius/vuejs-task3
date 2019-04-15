@@ -1,7 +1,10 @@
 <template>
-  <h1>
-    About
+  <div class="test">
+    <h1>
+    {{ $route.meta.displayName }}
+    <button @click="$router.push({ name: 'Home' })">Go to home</button>
   </h1>
+  </div>
 </template>
 
 <script>

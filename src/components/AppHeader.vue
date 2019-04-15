@@ -1,6 +1,6 @@
 <template>
   <div class="app-header-wrapper">
-    <AppNav/>
+    <AppNav :navigation="navigation"/>
     <header class="app-header">
       <div class="app-header__content">
         <h1>Vardas Pavarde</h1>
@@ -12,11 +12,25 @@
 
 <script>
 import AppNav from '@/components/AppNav'
+import routes from '@/routes'
 export default {
   name: 'AppHeader',
   components: {
     AppNav
-  }
+  },
+    computed: {
+        navigation () {
+            return routes.filter(route => route.meta.displayName)
+            .map(route => {
+                return {
+                    name: route.meta.displayName,
+                    to: {
+                        name: route.name
+                    }
+                }
+            })
+        }
+    }
 }
 </script>
 

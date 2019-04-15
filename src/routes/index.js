@@ -4,15 +4,30 @@ import Contacts from '@/views/Contacts'
 
 export default [
   {
+    name: 'Home',
     path: '/',
-    component: Home
+    component: Home,
+    meta: {
+      displayName: 'Namai',
+      displayPageTitle: 'Projektai'
+    }
   },
   {
+    name: 'About',
     path: '/about',
-    component: About
+    component: About,
+    meta: {
+      displayName: 'Apie mane',
+      displayPageTitle: 'Apie mane'
+    }
   },
   {
+    name: 'Contacts',
     path: '/contacts',
-    component: Contacts
+    component: Contacts,
+    meta: {
+      displayName: 'Kontaktai',
+      displayPageTitle: 'Kontaktai'
+    }
   }
 ]

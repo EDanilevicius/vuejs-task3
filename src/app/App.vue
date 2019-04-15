@@ -6,7 +6,7 @@
         <RouterView />
       </AppWhiteBox>
     </div>
-    <AppFooter/>
+    <AppFooter />
   </div>
 </template>
 
