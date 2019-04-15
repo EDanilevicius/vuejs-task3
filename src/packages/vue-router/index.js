@@ -6,7 +6,8 @@ Vue.use(VueRouter)
 
 export const createRouter = () => {
   const router = new VueRouter({
-    routes
+    routes,
+    mode: 'history'
   })
   return router
 }
